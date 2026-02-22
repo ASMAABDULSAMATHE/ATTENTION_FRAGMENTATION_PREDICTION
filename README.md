@@ -12,7 +12,7 @@
 
 ## Dataset
 - The dataset was collected in a survey as a part of a reseach on 'DOPAMINE DYNAMICS IN THE DIGITAL AGE: UNDERSTANDING YOUTH AND ADULT BEHAVIOR AND AI DRIVEN INTERVENTIONS'
-- Source: Survey of Adults aged 23 t0 35
+- Source: Survey of Adults aged 23 to 35
 - Features: Daily Screen Time,Productive Screen Time, Notification Check Frequency, Video Preference(Reels/Long Form), Perceived Productivity Reduction, Regret from Screen Time, Usage of Screentime Limits,Barrier for limiting Screen Usage,Opinion on Impact of Dopamine Awareness at Schools and AI coach belief.
 - Number of Participants: 61
 
