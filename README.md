@@ -1,4 +1,4 @@
-# DIGITAL BEHAVIOUR PREDICTION - LOGISTIC REGRESSION
+# DIGITAL BEHAVIOUR PREDICTION 
 <p><b>Predicting Attention Fragmentation, Digital Overuse, and Intervention Readiness from Survey Data</b></p>
 <p>The project aims to analyze survey data on screen usage,productivity and behavioural patterns to predict Attention Fragmentation, Digital Overuse and Intervention Readiness using machine learning model.The goal is to understand behavioural factors and support AI-based and other digital well-being interventions.<p>
 <p>The repository includes:</p>
