@@ -37,8 +37,7 @@ importance=pd.DataFrame({"Feature":X.columns,"Weight":model.coef_[0]}).sort_valu
 importance
 
 #Distribution Analysis
-for col in data.columns:
-  if col!="Attention_fragmentation_class" and col!="Id" :
+for col in "Attention_Fragmentation_Score_col" :
     plt.figure(figsize=(6,4))
     sns.histplot(data[col],bins=data[col].nunique(),kde=False)
     plt.title(f"Distribution of {col}")
