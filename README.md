@@ -82,6 +82,17 @@
   </tbody>
 </table>
  
+ ## Plots
+
+### Correlation Heatmap of Attention Fragmentation
+![Correlation Heatmap of Attention Fragmentation Score Features and Target](correlation_heatmap_AF.png)
+
+### Correlation Heatmap of Digital Overuse
+![Correlation Heatmap of Digital Overuse Index Features and Target](correlation_heatmap_DOI.png)
+
+### Correlation Heatmap of Intervention Readiness
+![Correlation Heatmap of Intervention Readiness Score Features and Target](correlation_heatmap_IR.png)
+
 ## Installation
 - Clone the repository:
 <p>https://github.com/ASMAABDULSAMATHE/Digital-Behavior-Prediction-ML.git</p>
