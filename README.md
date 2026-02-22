@@ -7,7 +7,7 @@
  <li> feature_engineering.py - Calculates Attention Fragmentation Score, Digital Overuse Index and  Intervention Readiness Score</li>
  <li> train_AttentionFragmentationPrediction.py - To predict Attention Fragmentation from </li>
  <li> train_DigitalOverusePrediction.py - Run this file to predict Digital Overuse</li>
- <li> train_InterventionReadinessPrediction.py - Run this file to predict Intervention Readiness <li>
+ <li> train_InterventionReadinessPrediction.py - Run this file to predict Intervention Readiness</li>
 </ul>
 
 ## Dataset
@@ -19,7 +19,7 @@
 ## Features
 - Attention Fragmentation Score Features: Daily Screen Time,Productive Screen Time, Notification Check Frequency,Perceived Productivity Reduction, Regret from Screen Time
 - Digital Overuse Index: Daily Screen Time,Productive Screen Time, Notification Check Frequency,Video Preference(Reels/Long Form)
-- Intervention Readiness Score: Regret from Screen Time, Usage of Screentime Limits,Opinion on Impact of Dopamine Awareness at Schools, AI coach belief
+- Intervention Readiness Score: Regret from Screen Time, Usage of Screentime Limits, Opinion on impact of Dopamine awareness at schools, AI coach belief
 
 ## Target Variables - Binary Classification
 - Attention Fragmentation Class
@@ -51,31 +51,31 @@
     </tr>
     <tr>
       <td>Top Feature 1</td>
-      <td>Attention_Fragmentation_Score</td>
+      <td>Screentime_regret</td>
+      <td>Video_preference</td>
+      <td>Screentime_regret</td>
+    </tr>
+    <tr>
+      <td>Top Feature 2</td>
+      <td>Perceived_prod_reduction</td>
+      <td>Prod_screen_time</td>
+      <td>Schools_impact</td>
+    </tr>
+    <tr>
+      <td>Top Feature 3</td>
+      <td>Daily_screen_time</td>
+      <td>Notif_check_freq</td>
+      <td>AI_coach_belief</td>
+    </tr>
+    <tr>
+      <td>Top Feature 4</td>
+      <td>Notif_check_freq</td>
       <td>Daily_screen_time</td>
       <td>Screen_limit</td>
     </tr>
     <tr>
-      <td>Top Feature 2</td>
-      <td>Daily_screen_time</td>
-      <td>Prod_screen_time</td>
-      <td>Screentime_regret</td>
-    </tr>
-    <tr>
-      <td>Top Feature 3</td>
-      <td>Notif_check_freq</td>
-      <td>Notif_check_freq</td>
-      <td>Schools_impact</td>
-    </tr>
-    <tr>
-      <td>Top Feature 4</td>
-      <td>Video_preference</td>
-      <td>Video_preference</td>
-      <td>AI_coach_belief</td>
-    </tr>
-    <tr>
       <td>Top Feature 5</td>
-      <td>Perceived_prod_reduction</td>
+      <td>Video_preference	</td>
       <td>-</td>
       <td>-</td>
     </tr>
