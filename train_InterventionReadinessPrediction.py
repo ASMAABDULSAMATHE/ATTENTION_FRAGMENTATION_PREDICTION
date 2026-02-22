@@ -10,7 +10,6 @@ from sklearn.metrics         import accuracy_score,classification_report,confusi
 data=pd.read_csv("ml_ready_ROLE OF DOPAMINE IN THE BEHAVIOURAL PATTERNS OF ADULTS.csv")
 data.head()
 
-
 #Define features(X) and target variable(y)
 Intervention_Readiness_Score_col=['Screen_limit','Screentime_regret','Schools_impact','AI_coach_belief']
 y=data["Intervention_Readiness_class"]
