@@ -7,12 +7,14 @@ from sklearn.model_selection import train_test_split,cross_val_score
 from sklearn.linear_model    import LogisticRegression
 from sklearn.metrics         import accuracy_score,classification_report,confusion_matrix,ConfusionMatrixDisplay
 
-data=pd.read_csv("ml_ready_attention_fragmentation_data.csv")
+data=pd.read_csv("ml_ready_ROLE OF DOPAMINE IN THE BEHAVIOURAL PATTERNS OF ADULTS.csv")
 data.head()
-Attention_Fragmentation_Score_col=['Daily_screen_time','Notif_check_freq','Video_preference','Perceived_prod_reduction','Screentime_regret']
+
+
 #Define features(X) and target variable(y)
-y=data["Attention_fragmentation_class"]
-X=data[Attention_Fragmentation_Score_col]
+Digital_Overuse_Index_col=['Daily_screen_time','Prod_screen_time','Notif_check_freq','Video_preference']
+y=data["Digital_Overuse_Index_class"]
+X=data[Digital_Overuse_Index_col]
 
 # Train(80%) and test (20%) with stratify parameter to ensure proportion of
 # classes is preserved
@@ -37,8 +39,7 @@ importance=pd.DataFrame({"Feature":X.columns,"Weight":model.coef_[0]}).sort_valu
 importance
 
 #Distribution Analysis
-for col in data.columns:
-  if col!="Attention_fragmentation_class" and col!="Id" :
+for col in Digital_Overuse_Index_col:
     plt.figure(figsize=(6,4))
     sns.histplot(data[col],bins=data[col].nunique(),kde=False)
     plt.title(f"Distribution of {col}")
@@ -47,18 +48,17 @@ for col in data.columns:
     plt.show()
 
 plt.figure(figsize=(6,4))
-sns.countplot(x="Attention_fragmentation_class",data=data)
-plt.title(f"Distribution of Attention Fragmentation Class")
-plt.xlabel("Attention Fragmentation Class")
+sns.countplot(x="Digital_Overuse_Index_class",data=data)
+plt.title(f"Distribution of Digital Overuse Index Class")
+plt.xlabel("Digital Overuse Index Class")
 plt.ylabel("Number of participants")
 plt.show()
 
 #Correlation Heatmap
 plt.figure(figsize=(12,8))
-data_corr=data.drop(columns=['Id'], errors='ignore')
-corr=data_corr.corr()
+corr=data[Digital_Overuse_Index_col].corr()
 sns.heatmap(corr,annot=True,cmap="coolwarm",fmt=".2f")
-plt.title("Correlation Heatmap of Survey Features and Target")
+plt.title("Correlation Heatmap of Digital Overuse Index Features and Target")
 plt.show()
 
 #Coefficient-based Feature Importance Analysis
@@ -69,7 +69,7 @@ plt.figure(figsize=(8,6))
 coef.plot(kind='barh')
 plt.title('Logistic Regression Coefficients')
 plt.xlabel('Coefficient Value')
-plt.ylabel('Attention Fragmentation Variables')
+plt.ylabel('Digital Overuse Index Variables')
 plt.show()
 
 #Confusion Matrix

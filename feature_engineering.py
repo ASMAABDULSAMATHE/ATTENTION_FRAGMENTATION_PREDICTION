@@ -37,7 +37,7 @@ print(df['Intervention_Readiness_class'].value_counts(normalize=True))
 
 #save the final dataset
 df.to_excel('ml_ready_ROLE OF DOPAMINE IN THE BEHAVIOURAL PATTERNS OF ADULTS.xlsx', index=False)
-print("ML-ready dataset saved as 'ml_ready_attention_fragmentation_data.xlsx'")
+print("ML-ready dataset saved as 'ml_ready_ROLE OF DOPAMINE IN THE BEHAVIOURAL PATTERNS OF ADULTS.xlsx'")
 
 df.to_csv('ml_ready_ROLE OF DOPAMINE IN THE BEHAVIOURAL PATTERNS OF ADULTS.csv', index=False)
-print("ML-ready csv dataset saved as 'ml_ready_attention_fragmentation_data.csv'")
+print("ML-ready csv dataset saved as 'ml_ready_ROLE OF DOPAMINE IN THE BEHAVIOURAL PATTERNS OF ADULTS.csv'")
