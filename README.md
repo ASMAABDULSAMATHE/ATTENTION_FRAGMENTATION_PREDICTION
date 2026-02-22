@@ -17,7 +17,7 @@
 - Number of Participants: 61
 
 ## Features
-- Attention Fragmentation Score Features: Daily Screen Time,Productive Screen Time, Notification Check Frequency,Perceived Productivity Reduction, Regret from Screen Time
+- Attention Fragmentation Score Features: Daily Screen Time, Notification Check Frequency,Video Preference(Reels/Long Form),Perceived Productivity Reduction, Regret from Screen Time
 - Digital Overuse Index: Daily Screen Time,Productive Screen Time, Notification Check Frequency,Video Preference(Reels/Long Form)
 - Intervention Readiness Score: Regret from Screen Time, Usage of Screentime Limits, Opinion on impact of Dopamine awareness at schools, AI coach belief
 
